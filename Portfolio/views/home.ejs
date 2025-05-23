@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Home</title></head>
+<body>
+    <h1>Welcome to the Rui's Web App</h1>
+    <% if (user) { %>
+        <p>Hello, <%= user.username %>!</p>
+        <a href="/logout">Logout</a>
+    <% } else { %>
+        <p>You are not logged in.</p>
+        <a href="/login">Login</a> | <a href="/register">Register</a>
+    <% } %>
+</body>
+</html>
